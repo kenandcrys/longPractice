@@ -2,11 +2,11 @@ class CallCenter {
 	constructor(name){
 		this.name = name
 	}
-	sayHello(){
+	sayHello = () => {
 		console.log(`Hello this is ${this.name}`)
 	}
 	callMeLater(delay){
-		setTimeout(this.sayHello(), delay)
+		setTimeout(this.sayHello, delay)
 	}
 }
 

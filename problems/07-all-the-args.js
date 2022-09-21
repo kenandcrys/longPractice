@@ -1,5 +1,5 @@
-function allTheArgs(func, ...args) {
-  // Your code here
+allTheArgs = (func, ...args) => {
+  return func.bind(null, ...args)
 }
 
 /*****************************************************************************/
